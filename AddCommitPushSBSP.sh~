@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then 
+echo "usage: scriptname \"comment to commit\""
+else
+git add .
+git commit -a -m ${1}
+git push git@github.com:nickklosterman/SBSQBarCrawlTShirt.git master
+fi
